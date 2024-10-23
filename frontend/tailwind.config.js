@@ -1,0 +1,18 @@
+/** @type {import('tailwindcss').Config} */
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}", // Adjust this according to your file structure
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'primary': "#462b9c"
+      }
+    }
+  },
+  plugins: [
+    require('tailwindcss-animated')
+  ],
+};
